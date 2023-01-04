@@ -1,38 +1,79 @@
 .App {
   text-align: center;
+  height: 100vh;
+}
+.result {
+  grid-area: result;
+}
+.clear {
+  grid-area: clear;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.divide {
+  grid-area: divide;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.multiply {
+  grid-area: multiply;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.minus {
+  grid-area: minus;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.plus {
+  grid-area: plus;
+}
+.zero {
+  grid-area: zero;
+}
+.dot {
+  grid-area: dot;
+}
+.equal {
+  grid-area: equal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container div {
+  border: 1px solid black;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "result result result result"
+    "clear clear clear divide"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding-top: 10%;
 }
